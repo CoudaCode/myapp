@@ -27,6 +27,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 config({
   path: path.join(process.cwd(), '.env.local'),
 });
+// MONGO_URI= "mongodb+srv://coudadm:EmBnNj7T3cgeSLqx@tourisma.p71xs6v.mongodb.net/?retryWrites=true&w=majority"
+// JWT_SECRET= "is_mi_token"
+// DISABLE_ESLINT_PLUGIN= true
 
 app.use(cors());
 app.use(express.json());
