@@ -46,7 +46,7 @@ connectDB()
     );
   });
 //Use Routes
-app.use("/us, usersRoute);
+app.use("/users", usersRoute);
 app.use("/signup", signupRoute);
 app.use("/guest", guestRoute);
 app.use("/view", viewRoute);
