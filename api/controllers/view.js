@@ -1,6 +1,7 @@
-import express from "express"
 import View from "./../models/Viewmodel.js"
-
+import User from "./../models/Usersmodel.js";
+// eslint-disable-next-line no-unused-vars
+import express from "express"
 
 //POST
 class viewController{
@@ -12,7 +13,9 @@ class viewController{
    */
 
   static async getAll(req, res, next) {
+
     try {
+    
       const viewList = await View.find();
       res.json(viewList);
     } catch (err) {
@@ -26,18 +29,19 @@ class viewController{
    * @param {express.NextFunction} next 
    */
   static async addView(req, res, next) {
+    try {
     console.log(req.body);
   const view = new View({
-    tname: req.body.tname,
-    tdescription: req.body.tdescription,
-    price: req.body.price,
-    tnumber: req.body.tnumber,
+    // tname: req.body.tname,
+    // tdescription: req.body.tdescription,
+    // price: req.body.price,
+    // tnumber: req.body.tnumber,
+    ...req.body
   });
-  try {
     const savedView = await view.save();
-    res.json(savedView);
+    res.json({message: savedView });
   } catch (err) {
-    res.json({ message: err });
+    res.json({ message: err.message });
   }
   }
 
@@ -54,7 +58,7 @@ class viewController{
     const searchView = await View.find({ tnumber: req.body.tnumber });
     res.json(searchView); 
   } catch (err) {
-    res.json({ message: err });
+    res.json({ message: err.message });
   }
   }
 
@@ -71,9 +75,8 @@ class viewController{
     try {
       const deleteView = await User.deleteOne({ tnumber: req.body.tnumber });
       res.json(deleteView);
-      console.log(searchView);
     } catch (err) {
-      res.json({ message: err });
+      res.json({ message: err.message });
     }
   }
 
@@ -95,7 +98,7 @@ class viewController{
       res.json(updateView);
       console.log(updateView);
     } catch (err) {
-      res.json({ message: err });
+      res.json({ message: err.message });
     }
   }
 }
@@ -107,7 +110,7 @@ export default viewController;
 //     const viewList = await View.find();
 //     res.json(viewList);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -123,7 +126,7 @@ export default viewController;
 //     const savedView = await view.save();
 //     res.json(savedView);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -133,7 +136,7 @@ export default viewController;
 //     const searchView = await View.find({ tnumber: req.body.tnumber });
 //     res.json(searchView);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -144,7 +147,7 @@ export default viewController;
 //     res.json(deleteView);
 //     console.log(searchView);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -165,7 +168,7 @@ export default viewController;
 //     );
 //     res.json(updateView);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 

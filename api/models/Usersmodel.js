@@ -22,8 +22,7 @@ const UsersSchema = new Schema(
       type: String,
       required: true,
     },
-  },
-  { collection: "UserDetails" }
+  }
 );
 
 export default model("Users", UsersSchema);

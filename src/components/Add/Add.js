@@ -108,8 +108,7 @@ class Add extends React.Component {
     fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         name: this.state.name,
@@ -121,7 +120,7 @@ class Add extends React.Component {
       }),
     })
       .then(function (callback) {
-        console.log(callback.json());
+        return console.log(callback.json());
       })
       .catch((error) => {
         console.log(error);
@@ -140,12 +139,11 @@ class Add extends React.Component {
   render() {
     return (
       <div className="container">
-        <form onSubmit={this.formSubmitHandler}>
+        <div onSubmit={this.formSubmitHandler} >
           <div className="container text-center">
             <br></br>
             <br></br>
             <br></br>
-
             <h1 className="o">
               {" "}
               <img src={additional} alt=""></img>&nbsp;Tour Package Reservation
@@ -154,12 +152,11 @@ class Add extends React.Component {
             <br></br>
             <br></br>
           </div>
-
           <div className="container text-center mt-3">
-            <form onSubmit={this.onSubmitHandler}>
+            <form onSubmit={this.onSubmitHandler} encType="multipart/form-data">
               <div className="form-group">
                 <label className="text-left">
-                  <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Name
+                  <i className="fa fa-user" aria-hidden="true"></i>&nbsp;Name
                 </label>
                 <input
                   name="name"
@@ -178,7 +175,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email
+                  <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email
                 </label>
                 <input
                   name="email"
@@ -196,7 +193,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Phone
+                  <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;Phone
                   Number
                 </label>
                 <input
@@ -215,7 +212,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i class="fa fa-address-card" aria-hidden="true"></i>
+                  <i className="fa fa-address-card" aria-hidden="true"></i>
                   &nbsp;Address
                 </label>
                 <input
@@ -234,7 +231,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Country
+                  <i className="fa fa-globe" aria-hidden="true"></i>&nbsp;Country
                 </label>
                 <input
                   name="country"
@@ -252,7 +249,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i class="fa fa-male" aria-hidden="true"></i>&nbsp;Gender
+                  <i className="fa fa-male" aria-hidden="true"></i>&nbsp;Gender
                 </label>
                 <input
                   name="gender"
@@ -285,7 +282,7 @@ class Add extends React.Component {
               </div>
             </form>
           </div>
-        </form>
+        </div>
       </div>
     );
   }

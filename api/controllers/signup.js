@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import express from "express"
 import SignUp from "./../models/Signupmodel.js"
 
@@ -71,7 +72,7 @@ class signupController{
       userEmail: req.body.userEmail,
     });
     res.json(deleteSignUp);
-    console.log(searchSignUp);
+    console.log(deleteSignUp);
   } catch (err) {
     res.json({ message: err });
   }

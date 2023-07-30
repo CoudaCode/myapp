@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import express from "express"
 import Guest from "./../models/Guestmodel.js"//POST
 
@@ -13,7 +14,7 @@ class GuestController {
         const guestList = await Guest.find();
         res.json(guestList);
       } catch (err) {
-        res.json({ message: err });
+        res.json({ message: err.message });
       }
     }
   /**
@@ -32,7 +33,7 @@ class GuestController {
         const savedGuest = await guest.save();
         res.json(savedGuest);
       } catch (err) {
-        res.json({ message: err });
+        res.json({ message: err.message });
       }
     }
   /**
@@ -47,7 +48,7 @@ class GuestController {
     const searchGuest = await Guest.find({ email: req.body.email });
     res.json(searchGuest);
   } catch (err) {
-    res.json({ message: err });
+    res.json({ message: err.message });
   }
     }
   /**
@@ -63,9 +64,8 @@ class GuestController {
       adminEmail: req.body.adminEmail,
     });
     res.json(deleteGuest);
-    console.log(searchGuest);
   } catch (err) {
-    res.json({ message: err });
+    res.json({ message: err.message });
   }
     }
   /**
@@ -88,7 +88,7 @@ class GuestController {
         );
         res.json(updateGuest);
       } catch (err) {
-        res.json({ message: err });
+        res.json({ message: err.message });
       }
     }
 }
@@ -108,7 +108,7 @@ class GuestController {
   //   const savedGuest = await guest.save();
   //   res.json(savedGuest);
   // } catch (err) {
-  //   res.json({ message: err });
+  //   res.json({ message: err.message });
   // }
 // });
 
@@ -118,7 +118,7 @@ class GuestController {
 //     const searchGuest = await Guest.find({ email: req.body.email });
 //     res.json(searchGuest);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -131,7 +131,7 @@ class GuestController {
 //     res.json(deleteGuest);
 //     console.log(searchGuest);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -149,7 +149,7 @@ class GuestController {
 //     );
 //     res.json(updateGuest);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 

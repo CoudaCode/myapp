@@ -1,7 +1,8 @@
 import { Router } from "express";
 import viewController from "../controllers/view.js";
+// import View from "../models/Viewmodel.js";
+// import User from "../models/Usersmodel.js";
 const router = Router()
-
 router.get("/", viewController.getAll)
 router.post("/", viewController.addView)
 router.post("/search", viewController.searchView)
@@ -50,7 +51,7 @@ export default router
 //   try {
 //     const deleteView = await User.deleteOne({ tnumber: req.body.tnumber });
 //     res.json(deleteView);
-//     console.log(searchView);
+//     // console.log(searchView);
 //   } catch (err) {
 //     res.json({ message: err });
 //   }
@@ -77,4 +78,5 @@ export default router
 //   }
 // });
 
-// module.exports = router;
+
+// export default router;

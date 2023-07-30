@@ -17,8 +17,7 @@ const UsersSchema = new Schema(
       type: String,
       required: true,
     },
-  },
-  { collection: "UserSignUp" }
+  }
 );
 
 export default model("SignUp", UsersSchema);

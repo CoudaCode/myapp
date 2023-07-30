@@ -17,8 +17,7 @@ const UsersSchema = new Schema(
       type: String,
       required: true,
     },
-  },
-  { collection: "ViewTours" }
+  }
 );
 
-export default model("Views", UsersSchema);
+export default model("View", UsersSchema);

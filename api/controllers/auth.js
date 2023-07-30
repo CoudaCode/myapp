@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import express from "express"
 import randomstring from "randomstring"
 import View from "./../models/Authmodel.js"//POST

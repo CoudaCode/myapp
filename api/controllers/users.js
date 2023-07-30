@@ -1,8 +1,7 @@
-import express from "express"
+// eslint-disable-next-line no-unused-vars
+import express from 'express';
 import User from "./../models/Usersmodel.js"
 
-
-//POST
 class userController{
     /**
    * 
@@ -16,7 +15,7 @@ class userController{
       const usersList = await User.find();
       res.json(usersList);
     } catch (err) {
-      res.json({ message: err });
+      res.json({ message: err.message });
     }
   } 
     /**
@@ -25,22 +24,23 @@ class userController{
    * @param {express.Response} res 
    * @param {express.NextFunction} next 
    */
-  static async addUser(req, res, next) {
-    console.log(req.body);
-
-    const user = new User({
-      name: req.body.name,
-      email: req.body.email,
-      phone: req.body.phone,
-      address: req.body.address,
-      country: req.body.country,
-      gender: req.body.gender,
-    });
+  static async addUser(req, res) {
+    
     try {
+    console.log("body",req.body);
+    const user = new User({
+      // name: req.body.name,
+      // email: req.body.email,
+      // phone: req.body.phone,
+      // address: req.body.address,
+      // country: req.body.country,
+      // gender: req.body.gender,
+      ...req.body
+    });  
       const savedUser = await user.save();
       res.json(savedUser);
     } catch (err) {
-      res.json({ message: err });
+      res.json({ message: err.message });
     }
 
   }
@@ -58,7 +58,7 @@ class userController{
         const searchUser = await User.find({ email: req.body.email });
         res.json(searchUser);
       } catch (err) {
-        res.json({ message: err });
+        res.json({ message: err.message });
       }
     }
 
@@ -75,7 +75,7 @@ class userController{
       res.json(deleteUser);
       console.log(deleteUser);
     } catch (err) {
-      res.json({ message: err });
+      res.json({ message: err.message });
     }
   }
 
@@ -106,7 +106,7 @@ class userController{
     );
     res.json(updateUser);
   } catch (err) {
-    res.json({ message: err });
+    res.json({ message: err.message });
   }
 
   }
@@ -119,7 +119,7 @@ export default userController
 //     const usersList = await User.find();
 //     res.json(usersList);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -137,7 +137,7 @@ export default userController
 //     const savedUser = await user.save();
 //     res.json(savedUser);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -147,7 +147,7 @@ export default userController
 //     const searchUser = await User.find({ email: req.body.email });
 //     res.json(searchUser);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -158,7 +158,7 @@ export default userController
 //     res.json(deleteUser);
 //     console.log(deleteUser);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 
@@ -180,7 +180,7 @@ export default userController
 //     );
 //     res.json(updateUser);
 //   } catch (err) {
-//     res.json({ message: err });
+//     res.json({ message: err.message });
 //   }
 // });
 

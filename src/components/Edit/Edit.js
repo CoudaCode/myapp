@@ -237,11 +237,11 @@ class Edit extends Component {
                 Price
               </label>
               <input
-                name="tprice"
+                name="price"
                 onChange={this.onChangeHandler}
                 type="text"
                 className="form-control"
-                value={this.state.tprice}
+                value={this.state.price}
                 required
               />
             </div>

@@ -9,8 +9,7 @@ const UsersSchema = new Schema(
       type: String,
       required: true,
     },
-  },
-  { collection: "GuestDetails" }
+  }
 );
 
 export default model("Guest", UsersSchema);
