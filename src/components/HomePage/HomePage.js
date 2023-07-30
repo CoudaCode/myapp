@@ -23,16 +23,24 @@ export class HomePage extends Component {
         </div>
         <br></br>
         <div className="container text-left">
-          <h2>Is it safe to travel to Sri Lanka?</h2>
+          <h2>Basilique Notre-Dame de la Paix (Yamoussoukro) :</h2>
           <br></br>
           <p>
-            As you know, Sri Lanka is one of the most satisfying countries to
-            travel to in South Asia. But as everyone knows, Sri Lanka had a
-            terrible time past days due to terrorist attacks. But fortunately,
-            the Sri Lankan government was able to stop their activities totally
-            within two weeks. Still, the harm they did to Sri Lanka is caused to
-            reduce the monthly visitors’ amount so severely. From this article,
-            you will know that are you safe to travel to Sri Lanka these days.
+            La Basilique Notre-Dame de la Paix est l'une des plus grandes
+            églises catholiques au monde et une icône architecturale de la Côte
+            d'Ivoire. Située à Yamoussoukro, la capitale politique du pays,
+            cette magnifique basilique a été inaugurée en 1990 par feu le
+            président Félix Houphouët-Boigny. Son architecture impressionnante
+            est inspirée de la Basilique Saint-Pierre de Rome, avec un dôme
+            central en marbre blanc, entouré de seize colonnes élancées.{" "}
+            <br></br>
+            <br></br>
+            La construction de la basilique a duré près de dix ans et mobilisé
+            des artisans locaux et des experts du monde entier. La splendeur de
+            l'intérieur est tout aussi époustouflante, avec des vitraux colorés,
+            des fresques religieuses et une impressionnante mosaïque
+            représentant Jésus-Christ. Les visiteurs peuvent également monter au
+            sommet du dôme pour profiter d'une vue panoramique sur la ville.
           </p>
         </div>
         <br></br>
@@ -41,73 +49,59 @@ export class HomePage extends Component {
         </div>
         <br></br>
         <div className="container text-left">
-          <h2>
-            Sri Lanka government has expanded the safety of Sri Lankans and
-            especially foreigners
-          </h2>
+          <h2>Parc National de Taï (Région du Bas-Sassandra)</h2>
           <br></br>
           <p>
-            It’s been six years since we have defeat terrorism from Sri Lanka.
-            But unfortunately, Sri Lanka had to face another most crucial moment
-            again by terrorist attacks. But fortunately, the former president
-            Maithripala Sirisena allows the military forces to take control of
-            everything by giving them full power to defend against them, and the
-            military authorities did their job very well. And after the hardest
-            time, Again Sri Lanka back to the normal as previous days and you
-            are most welcome to travel around anywhere.
+            Le Parc National de Taï est l'une des principales réserves
+            naturelles de l'Afrique de l'Ouest et un site du patrimoine mondial
+            de l'UNESCO. Situé dans la région du Bas-Sassandra, ce parc protège
+            l'une des dernières forêts tropicales primaires de la Côte d'Ivoire.
+            Il abrite une biodiversité incroyable, notamment des espèces rares
+            telles que le chimpanzé, le léopard, l'éléphant de forêt et de
+            nombreuses espèces d'oiseaux exotiques.
+            <br></br>
+            <br></br>
+            Les amateurs de nature et d'aventure seront comblés par les
+            activités de trekking et de randonnée proposées dans le parc. Des
+            guides locaux expérimentés peuvent accompagner les visiteurs pour
+            des safaris pédestres à la recherche des animaux emblématiques de la
+            région. Le Parc National de Taï offre une expérience unique pour les
+            voyageurs souhaitant se rapprocher de la beauté sauvage de la nature
+            africaine.
           </p>
         </div>
 
-        <div className="container text-left">
-          <h2>The extra layer of security</h2>
-          <br></br>
-          <p>
-            If you are a person who already visits Sri Lanka, you will see
-            something has changed. Nowadays, you can see each public places
-            covered up with Army forces to provide the maximum security for
-            everyone. So you really don’t need to worry about safety anymore.
-            Just have to enjoy your vacation.
-          </p>
-        </div>
-
-        <div className="container text-left">
-          <h2>Locals are delighted to help foreigners more than ever</h2>
-          <br></br>
-          <p>
-            Every Sri Lankans know what happened to Sri Lankan’s tourism
-            industry after the attack. So they want to get into that position
-            that they were previously attained and wanted to develop the tourism
-            industry more than ever. So when you arrived in Sri Lanka and
-            willing to get help from a Sri Lankan, you have to ask, or they will
-            help before you asked. That makes you feel good.
-          </p>
-        </div>
         <br></br>
         <div className="container text-center">
-          <img src={image2} alt=""></img>
+          <img src={"https://i0.wp.com/mondalu.com/wp-content/uploads/2020/04/IMG_0494-scaled.jpg?resize=1800%2C1200&amp;ssl=1"} className="img-fluid img-thumbnail" alt=""></img>
         </div>
         <br></br>
 
         <div className="container text-left">
-          <h2>
-            The opinion of some foreign travelers about the current situation in
-            Sri Lanka
-          </h2>
+          <h2>Îles Ehotilé (San Pedro)</h2>
           <br></br>
           <p>
-            If you still confused about your travel plan to Sri Lanka, these
-            living proofs will make you feel so good. Harald Baldr: Harald Baldr
-            is a Youtuber/traveler who has recently visited Sri Lanka and
-            explain the current situation of the country by traveling so many
-            places around Sri Lanka. And his YouTube channel contains vlogs he
-            created when he was going around this beautiful country Sri Lanka.
-            You can see their vlogs on YouTube about the current situation, and
-            there are so many on YouTube from the foreigner who visited Sri
-            Lanka recently. feel free to check.
+            Les îles Ehotilé, également appelées îles Assinie, sont un archipel
+            paradisiaque situé au large de la côte de San Pedro, dans le
+            sud-ouest de la Côte d'Ivoire. Ces îles tropicales offrent des
+            plages de sable blanc immaculé, des eaux turquoise et une végétation
+            luxuriante. C'est l'endroit idéal pour les voyageurs en quête de
+            détente et de beauté naturelle préservée.
+            <br></br>
+            <br></br>
+            Les îles Ehotilé sont également connues pour leur riche patrimoine
+            culturel, avec des villages de pêcheurs traditionnels où les
+            visiteurs peuvent découvrir la vie locale et déguster des plats de
+            fruits de mer frais et délicieux. Les activités populaires incluent
+            la baignade, la plongée avec tuba et la découverte des mangroves
+            environnantes en kayak.
           </p>
         </div>
 
         <br></br>
+        <div className="container text-center">
+          <img src={image1} alt=""></img>
+        </div>
       </div>
     );
   }
