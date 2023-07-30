@@ -29,20 +29,14 @@ class userController{
     try {
     console.log("body",req.body);
     const user = new User({
-      // name: req.body.name,
-      // email: req.body.email,
-      // phone: req.body.phone,
-      // address: req.body.address,
-      // country: req.body.country,
-      // gender: req.body.gender,
       ...req.body
     });  
       const savedUser = await user.save();
-      res.json(savedUser);
+      console.log('savedUser',savedUser)
+      res.status(201).json({message: savedUser});
     } catch (err) {
       res.json({ message: err.message });
     }
-
   }
 
     /**

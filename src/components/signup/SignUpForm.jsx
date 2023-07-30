@@ -77,17 +77,17 @@ class SignUpForm extends Component {
       this.state.password == null &&
       this.state.conPassword == null
     ) {
-      return alert("Cannot submit empty fields");
+      return alert("Renseigner les champs vides s'il vous plait !");
     }
     if (this.state.password !== this.state.conPassword) {
-      alert("Password Mismatch!");
+      alert("Non concordance des mots de passe!");
       return;
     }
 
-    swal("User Details Added Successfully!", "No warnings! ", "success");
+    swal("Enregistrer avec succeès!", "No warnings! ", "success");
     let thisState = this;
     let stateaccess = this.state;
-    alert(JSON.stringify(this.state));
+    // alert(JSON.stringify(this.state));
     fetch("http://localhost:3000/signup", {
       method: "POST",
       headers: {
@@ -116,6 +116,7 @@ class SignUpForm extends Component {
       password: "",
       conPassword: "",
     });
+   
   };
 
   render() {

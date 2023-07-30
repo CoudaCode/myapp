@@ -62,43 +62,7 @@ export const fakeAuth = {
   },
 };
 
-// function AuthButton() {
-//   let history = useHistory();
 
-//   return fakeAuth.isAuthenticated ? (
-//     <div className={"row justify-content-center  p-2"}>
-//       {/* <label className={"text-black mr-5"}>You are now logged in...</label> */}
-
-//       {/* <button
-//         className={"btn btn-danger"}
-//         onClick={() => {
-//           fakeAuth.signOut(() => history.push("/home"));
-//         }}
-//       >
-//         <i className="fa fa-send"></i>&nbsp; Sign out
-//       </button> */}
-//     </div>
-//   ) : (
-//     <div>
-//       <p>You are not logged in.</p>
-//       <button type={"button"} onClick={LoginPage()}>
-//         Log in
-//       </button>
-//     </div>
-//   );
-// }
-
-// function PrivateRoute({ component: Comp, loggedIn, path, ...rest }) {
-//   return (
-//     <Route
-//       path={path}
-//       {...rest}
-//       render={(props) => {
-//         return loggedIn ? <Comp {...props} /> : <Navigate to="/login" />;
-//       }}
-//     />
-//   );
-// }
 
 function LoginPage() {
   const navigate = useNavigate();

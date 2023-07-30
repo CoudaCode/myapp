@@ -77,7 +77,7 @@ class Add extends React.Component {
       });
       return false;
     }
-    swal("Guest Details Added Successfully!", "No warnings! ", "success");
+    swal("Invite Ajouté Avec succès!", "Aucun avertissement! ", "success");
     return true;
   };
 
@@ -108,7 +108,7 @@ class Add extends React.Component {
     fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name: this.state.name,
@@ -116,7 +116,7 @@ class Add extends React.Component {
         phone: this.state.phone,
         address: this.state.address,
         country: this.state.country,
-        gender: this.state.gender
+        gender: this.state.gender,
       }),
     })
       .then(function (callback) {
@@ -139,7 +139,7 @@ class Add extends React.Component {
   render() {
     return (
       <div className="container">
-        <div onSubmit={this.formSubmitHandler} >
+        <div onSubmit={this.formSubmitHandler}>
           <div className="container text-center">
             <br></br>
             <br></br>
@@ -175,7 +175,8 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email
+                  <i className="fa fa-envelope" aria-hidden="true"></i>
+                  &nbsp;Email
                 </label>
                 <input
                   name="email"
@@ -231,7 +232,8 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i className="fa fa-globe" aria-hidden="true"></i>&nbsp;Country
+                  <i className="fa fa-globe" aria-hidden="true"></i>
+                  &nbsp;Country
                 </label>
                 <input
                   name="country"
@@ -270,8 +272,7 @@ class Add extends React.Component {
               <div className="form-group">
                 <button
                   className="btn btn-danger"
-                  onClick={this.onSubmitHandler}
-                >
+                  onClick={this.onSubmitHandler}>
                   <i className="fa fa-send"></i>&nbsp; Submit
                 </button>
                 <Link to="/home">
