@@ -36,21 +36,15 @@ class Navbar extends Component {
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="r"></div>
           <div className="navbar-buttons ml-auto">
-            <Link to="/login">
-              <button className="btn btn-danger mr-2" type="submit">
-                <i className="fa fa-user" aria-hidden="true"></i>&nbsp; Connexion
-              </button>
-            </Link>
             {/* <Link to="/dashboard">
               <button className="btn btn-warning mr-2" type="submit">
-                <i className="fa fa-pencil" aria-hidden="true"></i>&nbsp; AboutUs
+              <i className="fa fa-pencil" aria-hidden="true"></i>&nbsp; AboutUs
               </button>
             </Link> */}
             <Link to="/home">
@@ -65,26 +59,39 @@ class Navbar extends Component {
               </button>
             </Link>
 
-            <Link to="/add">
+            {/* <Link to="/add">
               <button className="btn btn-info mr-2" type="submit">
                 <i className="fa fa-tag" aria-hidden="true"></i>&nbsp;
                 TourReservation
               </button>
-            </Link>
+            </Link> */}
 
             <Link to="/view">
               <button className="btn btn-success mr-2" type="submit">
-                <i className="fa fa-car" aria-hidden="true"></i>&nbsp; TourPackages
+                <i className="fa fa-car" aria-hidden="true"></i>&nbsp;
+                TourPackages
               </button>
             </Link>
 
             <button
               className="btn btn-warning mr-2"
               type="submit"
-              onClick={() => this.logout()}
-            >
-              <i className="fa fa-send" aria-hidden="true"></i>&nbsp; Deconnexion
+              onClick={() => this.logout()}>
+              <i className="fa fa-send" aria-hidden="true"></i>&nbsp;
+              Deconnexion
             </button>
+            <Link to="/login">
+              <button className="btn btn-danger mr-2" type="submit">
+                <i className="fa fa-user" aria-hidden="true"></i>&nbsp;
+                Connexion
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button className="btn btn-danger mr-2" type="submit">
+                <i className="fa fa-user" aria-hidden="true"></i>&nbsp;
+                Inscription
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
