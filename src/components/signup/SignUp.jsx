@@ -18,7 +18,7 @@ class SignUp extends Component {
           <div className="signup-box-name">
             <h1 className="title-text">
               <img src={guest} alt=""></img>
-              <br></br>SIGN UP
+              <br></br>INSCRIPTION
             </h1>
           </div>
         </div>
