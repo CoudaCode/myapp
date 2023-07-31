@@ -126,7 +126,7 @@ class SignUpForm extends Component {
           <form onSubmit={this.formSubmitHandler}>
             <div className="form-group">
               <label>
-                <i className="fa fa-user" aria-hidden="true"></i>&nbsp;User Name
+                <i className="fa fa-user" aria-hidden="true"></i>&nbsp;Nom Utilisateur
               </label>
               <input
                 type="text"
@@ -143,8 +143,7 @@ class SignUpForm extends Component {
 
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">
-                <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;User
-                Email
+                <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email
               </label>
               <input
                 name="userEmail"
@@ -158,7 +157,7 @@ class SignUpForm extends Component {
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">
                 <i className="fa fa-unlock-alt" aria-hidden="true"></i>
-                &nbsp;Password
+                &nbsp;Mot de passe
               </label>
               <input
                 type="password"
@@ -175,8 +174,8 @@ class SignUpForm extends Component {
             </div>
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">
-                <i className="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Confirm
-                Password
+                <i className="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Confirmation du
+                Mot de passe
               </label>
               <input
                 name="conPassword"
@@ -194,7 +193,7 @@ class SignUpForm extends Component {
             <br></br>
 
             <button type="submit" className="btn-submit">
-              SignUp
+            Inscription
             </button>
           </form>
         </div>
