@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "./HomePageStyles.css";
 import airport from "./airport.png";
-import image1 from "./image1.jpg";
-import image2 from "./image2.jpg";
-
+import notreDame from "./notre-Dame.jpeg"
+import ile from "./san pedro.jpeg"
 export class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +17,7 @@ export class HomePage extends Component {
         <br></br>
         <div className={"justify-content-center mt-5 mb-5"}>
           <h1 className="rr">
-            <img src={airport} alt=""></img>&nbsp;World Wide Explorers
+            <img src={airport} alt=""></img>&nbsp;Yarala
           </h1>
         </div>
         <br></br>
@@ -45,7 +44,7 @@ export class HomePage extends Component {
         </div>
         <br></br>
         <div className="container text-center">
-          <img src={image1} alt=""></img>
+          <img src={notreDame} className="img-fluid img-thumbnail " alt=""></img>
         </div>
         <br></br>
         <div className="container text-left">
@@ -100,7 +99,7 @@ export class HomePage extends Component {
 
         <br></br>
         <div className="container text-center">
-          <img src={image1} alt=""></img>
+          <img src={ile} alt="" className="img-fluid img-thumbnail"></img>
         </div>
       </div>
     );

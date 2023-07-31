@@ -48,17 +48,17 @@ export class ViewTours extends Component {
                 <p className="card-text justufy">{value.tdescription}</p>
                 <br />
                 <p className="card-text mb-0 p-8">
-                  <b>Price: </b>
+                  <b>Prix: </b>
                   {value.price}
                 </p>
                 <p className="card-text">
-                  <b>Package No: </b>
+                  <b>Numero packages: </b>
                   {value.tnumber}
                 </p>
                 <Link to="/add">
                 <div className="text-center">
                   <a href="#" className="btn btn-primary">
-                    Book Now
+                    Faire une reservation
                   </a>
                 </div>
                 </Link>

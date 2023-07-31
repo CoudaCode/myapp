@@ -16,9 +16,9 @@ class Navbar extends Component {
     if (localStorage.getItem("authToken")) {
       localStorage.clear();
       window.location.href = "/login";
-      swal("Logged Out!", "Successfully Logged Out", "success");
+      swal("Deconnecté!", "Successfully Logged Out", "success");
     } else {
-      swal("Not Logged In!", "Please Login first", "warning");
+      swal("Pas connecté!", "Please Login first", "warning");
     }
   }
 
@@ -27,7 +27,7 @@ class Navbar extends Component {
       <nav className="navbar p-3 mb-2 navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand mr-3">
           {" "}
-          <img src={loyal} alt=""></img>&nbsp; World Wide Explorers
+          <img src={loyal} alt=""></img>&nbsp; Yarala
         </a>
         <button
           className="navbar-toggler"
@@ -45,23 +45,23 @@ class Navbar extends Component {
           <div className="navbar-buttons ml-auto">
             <Link to="/login">
               <button className="btn btn-danger mr-2" type="submit">
-                <i className="fa fa-user" aria-hidden="true"></i>&nbsp; Login
+                <i className="fa fa-user" aria-hidden="true"></i>&nbsp; Connexion
               </button>
             </Link>
-            <Link to="/dashboard">
+            {/* <Link to="/dashboard">
               <button className="btn btn-warning mr-2" type="submit">
                 <i className="fa fa-pencil" aria-hidden="true"></i>&nbsp; AboutUs
               </button>
-            </Link>
+            </Link> */}
             <Link to="/home">
               <button className="btn btn-success mr-2" type="submit">
-                <i className="fa fa-home" aria-hidden="true"></i>&nbsp; Home
+                <i className="fa fa-home" aria-hidden="true"></i>&nbsp; Acceuil
               </button>
             </Link>
 
             <Link to="/contact">
               <button className="btn btn-light mr-2" type="submit">
-                <i className="fa fa-phone" aria-hidden="true"></i>&nbsp; ContactUs
+                <i className="fa fa-phone" aria-hidden="true"></i>&nbsp; Contact
               </button>
             </Link>
 
@@ -83,7 +83,7 @@ class Navbar extends Component {
               type="submit"
               onClick={() => this.logout()}
             >
-              <i className="fa fa-send" aria-hidden="true"></i>&nbsp; Logout
+              <i className="fa fa-send" aria-hidden="true"></i>&nbsp; Deconnexion
             </button>
           </div>
         </div>

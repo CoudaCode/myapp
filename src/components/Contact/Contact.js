@@ -19,24 +19,24 @@ class Contact extends Component {
             <br></br>
             <h1 className="d">
               {" "}
-              <img src={customer} alt=""></img>&nbsp;Contact Us
+              <img src={customer} alt=""></img>&nbsp;Contact
             </h1>
             <br></br>
 
-            <h1>Director General's Office</h1>
+            <h1>Bureau du directeur général</h1>
             <br></br>
             <h5>
               {" "}
-              <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;Phone Number
+              <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;Telephone
               <br></br>
-              <br></br>+94 112 426916 / +94 112 426907{" "}
+              <br></br>+225 07 47 18 52 91 / +255 46 38 02 87{" "}
             </h5>
             <br></br>
             <h5>
               {" "}
               <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email
               <br></br>
-              <br></br>dg@srilanka.travel{" "}
+              <br></br>couda.dm@gmail.com{" "}
             </h5>
           </div>
         </div>
