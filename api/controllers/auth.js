@@ -2,6 +2,7 @@
 import express from "express"
 import randomstring from "randomstring"
 import View from "./../models/Authmodel.js"//POST
+import SignUp from "./../models/Signupmodel.js"
 
 class authController {
     
