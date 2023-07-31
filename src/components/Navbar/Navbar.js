@@ -73,13 +73,13 @@ class Navbar extends Component {
               </button>
             </Link>
 
-            <button
+            {/* <button
               className="btn btn-warning mr-2"
               type="submit"
               onClick={() => this.logout()}>
               <i className="fa fa-send" aria-hidden="true"></i>&nbsp;
               Deconnexion
-            </button>
+            </button> */}
             <Link to="/login">
               <button className="btn btn-danger mr-2" type="submit">
                 <i className="fa fa-user" aria-hidden="true"></i>&nbsp;
