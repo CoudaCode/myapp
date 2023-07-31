@@ -13,7 +13,7 @@ export class ViewTours extends Component {
   }
 
   async componentDidMount() {
-    return fetch("http://localhost:3000/view")
+    return fetch("https://tourisme-a3qt.onrender.com/view")
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson);
