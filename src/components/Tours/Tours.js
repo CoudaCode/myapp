@@ -127,7 +127,7 @@ class Tours extends React.Component {
       <div className="container">
         <Link to="/edit">
           <button className="btn btn-danger ml-2">
-            <i className="fa fa-trash-o"></i>&nbsp; Upadate/Delete Tour Packages
+            <i className="fa fa-trash-o"></i>&nbsp; Modifier/Supprimer Tour Packages
           </button>
         </Link>
         <form onSubmit={this.formSubmitHandler}>
@@ -138,7 +138,7 @@ class Tours extends React.Component {
 
             <h1 className="o">
               {" "}
-              <img src={add} alt=""></img>&nbsp;Add Tour Packages
+              <img src={add} alt=""></img>&nbsp;Ajouter Tour Packages
             </h1>
             <br></br>
             <br></br>
@@ -149,8 +149,8 @@ class Tours extends React.Component {
             <form onSubmit={this.onSubmitHandler}>
               <div className="form-group">
                 <label className="text-left">
-                  <i className="fa fa-suitcase" aria-hidden="true"></i>&nbsp;Tour
-                  Name
+                  <i className="fa fa-suitcase" aria-hidden="true"></i>&nbsp;
+                  Nom
                 </label>
                 <input
                   name="tname"
@@ -169,7 +169,7 @@ class Tours extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Tour
+                  <i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;
                   Description
                 </label>
                 <input
@@ -188,8 +188,7 @@ class Tours extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i className="fa fa-money" aria-hidden="true"></i>&nbsp;Price of
-                  the Tour
+                  <i className="fa fa-money" aria-hidden="true"></i>&nbsp;Prix du tour
                 </label>
                 <input
                   name="price"
@@ -208,7 +207,7 @@ class Tours extends React.Component {
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
                   <i className="fa fa-thumbs-up" aria-hidden="true"></i>
-                  &nbsp;Tour Number
+                  &nbsp;Numero du tour
                 </label>
                 <input
                   name="tnumber"
@@ -231,12 +230,11 @@ class Tours extends React.Component {
                   className="btn btn-danger"
                   onClick={this.onSubmitHandler}
                 >
-                  <i className="fa fa-send"></i>&nbsp; Submit
+                  <i className="fa fa-send"></i>&nbsp; Envoyer
                 </button>
                 <Link to="/view">
                   <button className="btn btn-info ml-2">
-                    <i className="fa fa-arrow-left"></i>&nbsp; Back to Tour
-                    Packages
+                    <i className="fa fa-arrow-left"></i>&nbsp; Retour Sur les packages
                   </button>
                 </Link>
               </div>
