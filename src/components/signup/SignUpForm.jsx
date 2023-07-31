@@ -116,7 +116,7 @@ class SignUpForm extends Component {
       password: "",
       conPassword: "",
     });
-   
+     window.location.href = "/login"
   };
 
   render() {
