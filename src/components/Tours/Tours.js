@@ -83,7 +83,7 @@ class Tours extends React.Component {
     ) {
       return alert("Cannot submit empty fields");
     }
-    fetch("http://localhost:3000/view", {
+    fetch("https://tourisme-a3qt.onrender.com/view", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
