@@ -105,7 +105,7 @@ class Add extends React.Component {
     ) {
       return alert("Cannot submit empty fields");
     }
-    fetch("http://localhost:3000/users", {
+    fetch("https://tourisme-a3qt.onrender.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -156,7 +156,7 @@ class Add extends React.Component {
             <form onSubmit={this.onSubmitHandler} encType="multipart/form-data">
               <div className="form-group">
                 <label className="text-left">
-                  <i className="fa fa-user" aria-hidden="true"></i>&nbsp;Name
+                  <i className="fa fa-user" aria-hidden="true"></i>&nbsp;Nom et Prenom
                 </label>
                 <input
                   name="name"
@@ -194,8 +194,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;Phone
-                  Number
+                  <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;Numero de telephone
                 </label>
                 <input
                   name="phone"
@@ -233,7 +232,7 @@ class Add extends React.Component {
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
                   <i className="fa fa-globe" aria-hidden="true"></i>
-                  &nbsp;Country
+                  &nbsp;Pays
                 </label>
                 <input
                   name="country"
@@ -251,7 +250,7 @@ class Add extends React.Component {
 
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">
-                  <i className="fa fa-male" aria-hidden="true"></i>&nbsp;Gender
+                  <i className="fa fa-male" aria-hidden="true"></i>&nbsp;Genre
                 </label>
                 <input
                   name="gender"
@@ -273,11 +272,11 @@ class Add extends React.Component {
                 <button
                   className="btn btn-danger"
                   onClick={this.onSubmitHandler}>
-                  <i className="fa fa-send"></i>&nbsp; Submit
+                  <i className="fa fa-send"></i>&nbsp;Envoyer
                 </button>
                 <Link to="/home">
                   <button className="btn btn-info ml-2">
-                    <i className="fa fa-arrow-left"></i>&nbsp; Back to Home Page
+                    <i className="fa fa-arrow-left"></i>&nbsp; Retour à la page d'acceuil
                   </button>
                 </Link>
               </div>
