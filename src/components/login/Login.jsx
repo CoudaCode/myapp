@@ -30,7 +30,7 @@ class Login extends Component {
     // console.log(this.state.adminEmail);
     // console.log(this.state.adminPassword);
 
-    fetch("http://localhost:3000/auth", {
+    fetch("https://tourisme-a3qt.onrender.com/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
