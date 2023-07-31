@@ -32,7 +32,7 @@ class Edit extends Component {
     if (keyword === "") {
       return alert("This field is required");
     }
-    fetch("http://localhost:3000/view/search", {
+    fetch("https://tourisme-a3qt.onrender.com/view/search", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ class Edit extends Component {
       }
     });
 
-    fetch("http://localhost:3000/view/delete", {
+    fetch("hhttps://tourisme-a3qt.onrender.com/view/delete", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -116,7 +116,7 @@ class Edit extends Component {
     if (updateDoc === "") {
       return alert("Please specify the package number");
     }
-    fetch("http://localhost:3000/view/update", {
+    fetch("https://tourisme-a3qt.onrender.com/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -153,7 +153,7 @@ class Edit extends Component {
           <br></br>
           <br></br>
           <h1 className="y">
-            <img src={cancelled} alt=""></img>&nbsp;Update/Delete Tour Packages
+            <img src={cancelled} alt=""></img>&nbsp;Update/Supprimer Tour Packages
           </h1>
           <br></br>
           <br></br>
