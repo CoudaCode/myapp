@@ -15,7 +15,7 @@ class authController {
   static async addAuth(req,res,next){
     console.log(req.body);
     try {
-      const searchUser = await View.find({ password: req.body.adminPassword, userEmail: req.body.adminEmail });
+      const searchUser = await SignUp.find({ password: req.body.adminPassword, userEmail: req.body.adminEmail });
       console.log(searchUser);
       let Authresponse = {
           'username': searchUser[0].userName,
