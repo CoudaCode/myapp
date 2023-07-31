@@ -77,14 +77,14 @@ class Login extends Component {
           <h1 className="title-login">
             {" "}
             <img src={person} alt=""></img>
-            <br></br> LOGIN
+            <br></br> CONNEXTION
           </h1>
         </div>
         <div className="login-form">
           <form onSubmit={this.onSubmitHandler}>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1" className={"text-white"}>
-                <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;Admin Name
+                <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;Nom utilisateur
               </label>
               <input
                 name="adminEmail"
@@ -100,8 +100,7 @@ class Login extends Component {
 
             <div className="form-group">
               <label htmlFor="exampleInputPassword1" className={"text-white"}>
-                <i className="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Admin
-                Password
+                <i className="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Mot de Passe
               </label>
               <input
                 name="adminPassword"
@@ -119,7 +118,7 @@ class Login extends Component {
               className="submit-button"
               onClick={() => this.onSubmitHandler()}
             >
-              <i className="fa fa-send"></i>&nbsp; Login
+              <i className="fa fa-send"></i>&nbsp; Connexion
             </button>
           </form>
         </div>
